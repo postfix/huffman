@@ -30,8 +30,8 @@ func TestHuffman(t *testing.T) {
 	}}
 
 	for _, tc := range testCases {
-		if got := Huffman(tc.in); !reflect.DeepEqual(got, tc.want) {
-			t.Errorf("Huffman(%v) => got %v, want %v", tc.in, got, tc.want)
+		if got := FromFloat64s(tc.in); !reflect.DeepEqual(got, tc.want) {
+			t.Errorf("FromFloat64s(%v) => got %v, want %v", tc.in, got, tc.want)
 		}
 	}
 }

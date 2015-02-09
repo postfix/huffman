@@ -3,9 +3,18 @@ package huffman
 
 import "container/heap"
 
-// Huffman computes Huffman encoding code words from given weight table.
-// e.g. Huffman([0.5, 0.25, 0.25]) => ["0", "10", "11"]
-func Huffman(weights []float64) []string {
+// FromInts is a convenient wrapper of FromFloat64s.
+func FromInts(weights []int) []string {
+	ws := make([]float64, len(weights))
+	for i, w := range weights {
+		ws[i] = float64(w)
+	}
+	return FromFloat64s(ws)
+}
+
+// FromFloat64s computes Huffman encoding code words from given weight table in float64s.
+// e.g. FromFloat64s([0.5, 0.25, 0.25]) => ["0", "10", "11"]
+func FromFloat64s(weights []float64) []string {
 	if len(weights) == 0 {
 		return nil
 	}
