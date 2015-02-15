@@ -1,3 +1,4 @@
+[![GoDoc](http://godoc.org/github.com/mozu0/huffman?status.png)](http://godoc.org/github.com/mozu0/huffman)
 # huffman
 Computes Huffman encoding of elements, given frequencies.
 
