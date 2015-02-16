@@ -1,4 +1,5 @@
 [![GoDoc](http://godoc.org/github.com/mozu0/huffman?status.png)](http://godoc.org/github.com/mozu0/huffman)
+[![Build Status](https://travis-ci.org/mozu0/huffman.svg?branch=master)](https://travis-ci.org/mozu0/huffman)
 # huffman
 Computes Huffman encoding of elements, given frequencies.
 
